@@ -8,6 +8,9 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+
 ul
 {
     list-style-type: none;
@@ -15,9 +18,22 @@ ul
     
 }    
 
-nav a
+nav 
 {
     color: #0065FC;
+    top: right;
+
+
+}
+
+h1
+{
+    font-size: 1em;
+}
+h2
+{
+    font-size: 0.7em;
+}
 
 
 }
@@ -29,7 +45,7 @@ nav a
 {
     width: 880px;
     left: 50px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -42,21 +58,21 @@ nav a
 .pop
 {
     width: 345px;
+    background-color: #F2F2F2;
     
 }
 .activites
 {
     
-    background-color: #F2F2F2;
-    border-radius: 5px;
+    
+    border-radius: 10px;
     width: 300px;
 }
 aside
 {
     
     width: 415px;
-    background-color: #F2F2F2;
-    border-radius: 5px;
+    border-radius: 10px;
     display: block;
 }
 
