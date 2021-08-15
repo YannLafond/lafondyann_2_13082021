@@ -19,7 +19,8 @@ li
 }
 nav a
 {
-    color: #DEEBFF;
+    color: #0065FC;
+
 
 }
 #conteneur
@@ -27,6 +28,7 @@ nav a
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-color: #F2F2F2;
 }    
 
 #footer
