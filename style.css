@@ -9,26 +9,44 @@
     font-style: normal;
 }
 
+#page_body
+{
+    width: 900px;
+    margin:auto;
+}
 
-
-ul
+header nav
+{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+nav ul
 {
     list-style-type: none;
-    
+    display: flex;
     
 }    
 
-nav 
+nav li
+{
+    margin-right: 50px;
+}
+nav a
 {
     color: #0065FC;
-    top: right;
+    text-decoration: none;
+    padding-bottom: 3px;
 
 
 }
 
-h1
+header h1 h2
 {
-    font-size: 1em;
+    
+    justify-content: flex-start;
+    flex-direction: column;
+
 }
 h2
 {
@@ -36,10 +54,13 @@ h2
 }
 
 
-}
-#filtre
-{
+div a
+{   
     display: flex;
+    text-decoration: none;
+}
+
+
 }
 #conteneur
 {
