@@ -12,25 +12,25 @@
 #page_body
 {
     width: 900px;
-    margin:auto;
+    
 }
 
 header nav
 {
     display: flex;
     justify-content: flex-end;
-    
+    margin: 50 50 0 50 ;
 }
 nav ul
 {
     list-style-type: none;
-    display: flex;
+    
     
 }    
 
 nav li
 {
-    margin-right: 50px;
+    
 }
 nav a
 {
@@ -41,17 +41,8 @@ nav a
 
 }
 
-header h1 h2
-{
-    
-    justify-content: flex-start;
-    flex-direction: column;
 
-}
-h2
-{
-    font-size: 0.7em;
-}
+
 
 
 div a
@@ -75,6 +66,7 @@ div a
 .element
 {
     width: 245px;
+    background-color: #F2F2F2;
 }
 .pop
 {
@@ -94,8 +86,10 @@ aside
     
     width: 415px;
     border-radius: 10px;
-    display: block;
+    display: flex;
+    justify-content: flex-end;
 }
+
 
 #footer
 {
