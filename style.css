@@ -5,57 +5,229 @@ body
     margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+    width: 1440px;
 }
 
-header article section footer aside
+span
+{
+    font-weight: bold ;
+}
+
+footer
+{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #F2F2F2;
+}
+
+li
+{
+    list-style-type: none;
+       
+}
+
+a
+{
+    text-decoration: none;
+}
+
+aside
 {
     display: flex;
+    flex-direction: column;
+}
+form img
+{
+    height: 20px;
+    width: 18px;
+}
+
+input[type=search]
+{
+    height: 35px;
+    width: 230px;
+    border: 1px solid #F2F2F2;
+
+}
+
+input[type=submit]
+{
+    width: 130px;
+    height: 35px;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+#part1
+{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#part1 img
+{
+    height: 18px;
+    width: 16px;
 }
 
 #filtre
 {
     display: flex;
     flex-direction: row;
+    margin-right: 40px;
+    
+}
 
+#filtre h3
+{
+    margin-right: 20px;
+}
+
+#filtre img
+{
+   
+    
 }
 
 
+
+
+.economique
+{
+    height: 40px;
+    width: 190px;
+    border: 1px solid #F2F2F2;    
+    border-radius: 20px;
+    margin: 5px 20px 5px 0px;
+}   
+
+.familial
+{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    margin: 5px 20px 5px 20px;
+}
+.romantique
+{
+    height: 40px;
+    width: 180px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    margin: 5px 20px 5px 20px;
+}
+.animaux
+{
+    height: 40px;
+    width: 240px;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    margin: 5px 20px 5px 0px;
+
+}
+
+#part2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#section2  
+{
+    background-color: #F2F2F2;
+    display: flex;   
+    flex-direction: column; 
+    justify-content: space-around; 
+    width: 880px;
+    height: 625px;
+    border-radius: 10px;
+    
+    
+}
 
 #hebergement
 {
-    background-color: #F2F2F2;
+    
     display: flex;
     flex-flow: row wrap;
     align-items: space-around;
-    justify-content: center;
-    width: 700px;
-
-
 }
 
 
+.element
+{   
+    height: 245px;
+    width: 190px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 20px 5px 20px;
+    
+}
 
+.element img
+{
+    width: 190px;
+    border-radius: 10px 10px 0px 0px;
+}
 
 
 
 #populaires
 {
-    background-color: #F2F2F2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    width: 300px;
-
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    width: 420px;
+    height: 625px;
+    padding-ri: 10px; 
+    border-radius: 10px;
 }
 
-#pop
+.pop
+{   
+    height: 140px;
+    width: 340px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 2px 10px 2px 2px;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+
+
+
+}
+.pop img
+{
+    border-radius: 10px 0px 0px 10px;
+    width: 130px;
+    height: 130px;
+    padding: 2px 10px 2px 2px;
+    margin: 2px 10px 2px 2px;
+}
+.pop h4 p
 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    
+    flex-direction: row;
+    margin-right: 30px;
 }
 
-#activite
+#footer
+{
+    display: flex;
+    flex-direction: row;
+    
+
+}
