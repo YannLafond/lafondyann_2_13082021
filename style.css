@@ -13,7 +13,11 @@ span
     font-weight: bold ;
 }
 
-
+#bloc
+{
+    margin-right: 20px;
+    margin-left: 20px;
+}
 
 nav
 {
@@ -161,6 +165,11 @@ aside
     justify-content: space-between;
 }
 
+#part2 h3
+{
+    margin-left: 10px;
+}
+
 #section2  
 {
     background-color: #F2F2F2;
@@ -264,7 +273,7 @@ aside
     width: 300px;
     border: 2px solid #F2F2F2;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px 20px 20px 0px;
 }
 .activite img
 {
@@ -280,14 +289,27 @@ footer
 {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
         background-color: #F2F2F2;
 }
 #footer
 {
     display: flex;
     flex-direction: row;
-    
 
+}
+
+#footer h4
+{
+    margin-left: 20px;    
+    margin-bottom: -5px;
+}
+
+#footer ul 
+{
+    margin-left: -20px;
+}
+#propos, #heberg, #assistance
+{
+    margin-right: 300px;
 }
