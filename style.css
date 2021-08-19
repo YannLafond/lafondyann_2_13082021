@@ -240,8 +240,31 @@ aside
 .pop h4 p
 {
     display: flex;
+    flex-direction: column;
+   
+}
+
+#part3
+{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#activite
+{
+    display: flex;
     flex-direction: row;
-    margin-right: 30px;
+
+}
+
+.activite
+{
+    width: 300px;
+    border: 2px solid #F2F2F2;
+    border-radius: 10px;
+    margin: 20px;
 }
 
 footer
