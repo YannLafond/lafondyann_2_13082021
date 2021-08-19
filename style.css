@@ -86,6 +86,8 @@ a
 #part1 h1
 {
     margin-bottom: 20px;
+    height: 20px;
+    width: 18;
 }
 
 #menu ul
@@ -168,6 +170,7 @@ aside
 #part2 h3
 {
     margin-left: 10px;
+    margin-right: 40px;
 }
 
 #section2  
