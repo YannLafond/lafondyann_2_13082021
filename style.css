@@ -266,6 +266,15 @@ aside
     border-radius: 10px;
     margin: 20px;
 }
+.activite img
+{
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+.activite h4
+{
+    margin-left: 10px;
+}
 
 footer
 {
