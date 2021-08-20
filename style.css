@@ -1,7 +1,7 @@
 
 @font-face 
 {
-    font-family: 'ralewayregular';
+    font-family: fonts/'ralewayregular';
     src: url('raleway-regular-webfont.woff2') format('woff2'),
          url('raleway-regular-webfont.woff') format('woff');
     font-weight: normal;
@@ -12,12 +12,9 @@
 
 body
 {
-    font-family:"ralewayregular", "sans-serif;" ;
+    font-family:"ralewayregular", "sans-serif";
     background-color: white;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin: auto;
     width: 1440px;
 }
 
@@ -41,6 +38,7 @@ nav
 
 
 
+/* la barre de recherche*/ 
 
 input[type=search]
 {
@@ -92,6 +90,7 @@ a
     text-decoration: none;
 }
 
+/* la premiere section*/
 
 #part1
 {
@@ -131,6 +130,7 @@ a
 }
 
 
+/* les filtres de la section 1*/
 
 #filtre
 {
@@ -148,7 +148,7 @@ a
 
 .filtre
 {
-    padding: 10px;
+    padding: 10px 20px 10px 40px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
@@ -165,15 +165,23 @@ a
 
 #info p
 {
-    margin-left: 25px;
+    margin-left: 40px;
 }
 
 #info img
 {   
-    height: 12px;
-    width: 8px;
-    margin-bottom: -35px;
+    
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #F2F2F2;
+    padding: 10px;
+    margin-bottom: -45px;
 
+}
+
+.info
+{
+    width: 5px;
 }
 
 aside
@@ -218,6 +226,8 @@ aside
 
 }
 
+/* la section 2*/
+
 #part2
 {
     display: flex;
@@ -244,12 +254,14 @@ aside
     
 }
 
+/* les vignettes d'hebergement*/
+
 #hebergement
 {
     
     display: flex;
     flex-flow: row wrap;
-    align-items: space-around;
+    justify-content: space-between;
 }
 
 
@@ -272,11 +284,13 @@ aside
 
 
 
+/* les vignettes de populaire*/
+
 #populaires
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-content: space-around; 
     background-color: #F2F2F2;
     width: 420px;
     height: 625px;
@@ -310,9 +324,12 @@ aside
 .pop h4 p
 {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;    
+    justify-content: space-between;
    
 }
+
+/*la section 3*/
 
 #part3
 {
@@ -321,11 +338,13 @@ aside
     
 
 }
+/* les vignettes d'activites*/
 
 #activite
 {
     display: flex;
     flex-direction: row;
+
 
 }
 
@@ -345,6 +364,9 @@ aside
 {
     margin-left: 10px;
 }
+
+
+/* le pied de page*/
 
 footer
 {
