@@ -13,16 +13,37 @@ span
 
 #bloc
 {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 25px;
+    
 }
+
+/* logo et menu*/
 
 nav
 {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;   
+
 }
+
+
+#logo
+{
+    margin: 30px 20px 20px 0px;
+
+}
+    
+#menu ul 
+{
+    display: flex;
+    justify-content: flex-end;
+}   
+
+#menu li
+{
+    margin: 20px;
+}    
+
 
 
 
@@ -78,7 +99,7 @@ a
     text-decoration: none;
 }
 
-/* la premiere section*/
+/* les filtres*/
 
 #part1
 {
@@ -104,18 +125,7 @@ a
     font-size: 15px;
 }
 
-#menu ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-}
 
-#menu li
-{
-    margin: 16px;
-}
 
 
 /* les filtres de la section 1*/
@@ -172,12 +182,7 @@ a
     width: 5px;
 }
 
-aside
-{
-    display: flex;
-    flex-direction: column;
 
-}
 
 .economique
 {
@@ -214,53 +219,66 @@ aside
 
 }
 
-/* la section 2*/
+/* hebergement et populaire*/
 
-#part2
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-#part2 h3
-{
-    margin-left: 10px;
-    margin-right: 40px;
-}
 
-#section2  
+
+
+section  
 {
-    background-color: #F2F2F2;
+    
     display: flex;   
-    flex-direction: column; 
-    justify-content: space-around; 
-    width: 880px;
-    height: 625px;
-    border-radius: 10px;
-    
-    
+    width: 100%;
+    margin-left: -10px;
+
 }
 
-/* les vignettes d'hebergement*/
+
 
 #hebergement
 {
     
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;      
     justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+    margin: 20px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 70px 20px 70px 20px;
+
 }
 
+#text_titre
+{
+    display: block;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+#text_plus 
+{   
+    display: block;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 55px;
+    padding: 20px;
+    
+}
+
+/* les vignettes d'hebergement*/
 
 .element
 {   
-    height: 245px;
-    width: 190px;
+    justify-content: left;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
-    margin: 5px 20px 5px 20px;
+    height: 200px;
+    margin: 15px;
     
 }
 
@@ -272,6 +290,25 @@ aside
 
 
 
+aside
+{
+    display: block;
+    position: relative;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+aside h4
+{
+    font-size: 0.8em;
+}
+
+aside p
+{
+    font-size: 0.7em;
+}
+
 /* les vignettes de populaire*/
 
 #populaires
@@ -282,42 +319,59 @@ aside
     background-color: #F2F2F2;
     width: 420px;
     height: 625px;
-    padding-ri: 10px; 
+    padding-right: 10px; 
     border-radius: 10px;
 }
 
-.pop
+#populaires
+{
+    margin-left: -10px;
+}
+.icon_chart
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px;
+    margin-top: -10px;
+}
+
+.vignette_pop
 {   
+    display: flex;
     height: 140px;
     width: 340px;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+    justify-content: center;        
     background-color: white;
     padding: 2px 10px 2px 2px;
     border-radius: 10px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 30px 10px 30px;
 
 
 
 }
-.pop img
-{
+
+.vignette_pop img
+{   
+    display: flex;
+    justify-content: flex-start;
     border-radius: 10px 0px 0px 10px;
     width: 130px;
     height: 130px;
-    padding: 2px 10px 2px 2px;
-    margin: 2px 10px 2px 2px;
+    padding: 5px;
+    margin: 3px 3px 3px 3px;
+    
 }
-.pop h4 p
+.vignette_text
 {
-    display: flex;
-    flex-flow: row wrap;    
-    justify-content: space-between;
+    display: block;
+    margin-left: 10px;
+    padding-right: 20px;
+    
+
    
 }
 
-/*la section 3*/
+/*activite*/
 
 #part3
 {
@@ -358,10 +412,10 @@ aside
 
 footer
 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
 }
 #footer
 {
