@@ -32,7 +32,9 @@ nav
     margin: 30px 20px 20px 0px;
 
 }
-    
+
+/*menu de navigation*/
+
 #menu ul 
 {
     display: flex;
@@ -44,7 +46,31 @@ nav
     margin: 20px;
 }    
 
+/* le conteneur de recherche et filtre */
 
+.filter
+{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.filter img
+{
+    height: 18px;
+    width: 16px;
+}
+
+.filter h1
+{
+    margin-bottom: -12px;
+    font-size: 20px;
+}
+.filter p
+{
+    font-size: 15px;
+}
 
 
 /* la barre de recherche*/ 
@@ -69,8 +95,15 @@ input[type=submit]
     padding-top: 2px;
     color: white;
     border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
 
 
+}
+
+input[type=submit]:hover
+{
+    background-color:#DEEBFF;    
+    color: #0065FC;
 }
 
 form img
@@ -99,36 +132,7 @@ a
     text-decoration: none;
 }
 
-/* les filtres*/
-
-#part1
-{
-    display: flex;
-    flex-direction: column;
-
-
-}
-
-#part1 img
-{
-    height: 18px;
-    width: 16px;
-}
-
-#part1 h1
-{
-    margin-bottom: -12px;
-    font-size: 20px;
-}
-#part1 p
-{
-    font-size: 15px;
-}
-
-
-
-
-/* les filtres de la section 1*/
+/* les filtres */
 
 #filtre
 {
@@ -150,6 +154,9 @@ a
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
+
+
+
 #filtre img
 {
     border: 10px solid #F2F2F2;
@@ -160,6 +167,8 @@ a
 
 
 }
+
+
 
 #info p
 {
@@ -221,11 +230,7 @@ a
 
 /* hebergement et populaire*/
 
-
-
-
-
-section  
+.heberg  
 {
     
     display: flex;   
@@ -246,7 +251,8 @@ section
     background-color: #F2F2F2;
     margin: 20px;
     border-radius: 10px;
-    width: 100%;
+    height: 500px;
+    flex: 2;
     padding: 70px 20px 70px 20px;
 
 }
@@ -263,7 +269,7 @@ section
 {   
     display: block;
     position: absolute;
-    margin-top: 550px;
+    margin-top: 680px;
     margin-left: 55px;
     padding: 20px;
     
@@ -273,13 +279,19 @@ section
 
 .element
 {   
-    justify-content: left;
+    justify-content: space-around;
+    align-items: flex-start;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
     height: 200px;
     margin: 15px;
     
+}
+
+.element:hover
+{
+    transform: scale(1.1);
 }
 
 .element img
@@ -315,18 +327,20 @@ aside p
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: space-around; 
     background-color: #F2F2F2;
-    width: 420px;
-    height: 625px;
-    padding-right: 10px; 
+    flex: 1;
+    height: 600px;    
     border-radius: 10px;
 }
 
-#populaires
+#populaires h3
 {
-    margin-left: -10px;
+    margin-left: 30px;
 }
+
+
 .icon_chart
 {
     display: flex;
@@ -340,54 +354,53 @@ aside p
     display: flex;
     height: 140px;
     width: 340px;
-    justify-content: center;        
+    justify-content: center;
+    align-items: center;        
     background-color: white;
     padding: 2px 10px 2px 2px;
     border-radius: 10px;
     margin: 10px 30px 10px 30px;
+}
 
-
-
+.vignette_pop:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .vignette_pop img
 {   
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     border-radius: 10px 0px 0px 10px;
     width: 130px;
     height: 130px;
     padding: 5px;
-    margin: 3px 3px 3px 3px;
-    
+    margin: 3px 3px 3px -50px;    
 }
+
 .vignette_text
 {
     display: block;
     margin-left: 10px;
-    padding-right: 20px;
-    
-
-   
+    padding-right: 20px;   
 }
 
 /*activite*/
 
-#part3
+.parentactivite
 {
     display: flex;
     flex-direction: column;
-    
-
 }
+
 /* les vignettes d'activites*/
 
 #activite
 {
     display: flex;
     flex-direction: row;
-
-
 }
 
 .activite
@@ -397,11 +410,17 @@ aside p
     border-radius: 10px;
     margin: 10px 20px 20px 0px;
 }
+.activite:hover
+{
+    transform: scale(1.1);
+}
+
 .activite img
 {
     width: 300px;
     border-radius: 10px 10px 0px 0px;
 }
+
 .activite h4
 {
     margin-left: 10px;
@@ -417,6 +436,7 @@ footer
     justify-content: flex-start;
     background-color: #F2F2F2;
 }
+
 #footer
 {
     display: flex;
@@ -434,6 +454,7 @@ footer
 {
     margin-left: -20px;
 }
+
 #propos, #heberg, #assistance
 {
     margin-right: 300px;
