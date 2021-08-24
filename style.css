@@ -137,7 +137,7 @@ a
 #filtre
 {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     margin-right: 40px;  
     margin-top: 20px;  
 }
@@ -145,30 +145,33 @@ a
 
 {
     margin-right: 20px;
-    margin-bottom: -5px;
+    
 }
 
-.filtre
+.filtreicon
 {
+    
     padding: 10px 20px 10px 40px;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
 }
 
-
-
 #filtre img
-{
+{       
     border: 10px solid #F2F2F2;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-bottom: -14px;
     margin-right: -35px;
-
-
 }
 
 
+
+
+
+
+
+/* barre info*/
 
 #info p
 {
@@ -193,40 +196,6 @@ a
 
 
 
-.economique
-{
-    height: 40px;
-    width: 190px;
-    border: 1px solid #F2F2F2;    
-    border-radius: 20px;
-    margin: 5px 20px 5px 0px;
-}   
-
-.familial
-{
-    height: 40px;
-    width: 150px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    margin: 5px 20px 5px 20px;
-}
-.romantique
-{
-    height: 40px;
-    width: 180px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    margin: 5px 20px 5px 20px;
-}
-.animaux
-{
-    height: 40px;
-    width: 240px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    margin: 5px 20px 5px 0px;
-
-}
 
 /* hebergement et populaire*/
 
