@@ -11,10 +11,14 @@ span
     font-weight: bold ;
 }
 
+a
+{
+    color: initial;
+}
+
 #bloc
 {
-    margin: 25px;
-    
+    margin: 25px;    
 }
 
 /* logo et menu*/
@@ -22,15 +26,12 @@ span
 nav
 {
     display: flex;
-    justify-content: space-between;   
-
+    justify-content: space-between;
 }
-
 
 #logo
 {
     margin: 30px 20px 20px 0px;
-
 }
 
 /*menu de navigation*/
@@ -52,8 +53,6 @@ nav
 {
     display: flex;
     flex-direction: column;
-
-
 }
 
 .filter img
@@ -67,6 +66,7 @@ nav
     margin-bottom: -12px;
     font-size: 20px;
 }
+
 .filter p
 {
     font-size: 15px;
@@ -82,7 +82,6 @@ input[type=search]
     border: 1px solid #F2F2F2;
     margin-right: -5px;
     padding-top: 2px;
-
 }
 
 input[type=submit]
@@ -96,8 +95,6 @@ input[type=submit]
     color: white;
     border-radius: 0px 10px 10px 0px;
     cursor: pointer;
-
-
 }
 
 input[type=submit]:hover
@@ -122,6 +119,7 @@ form
 {
     margin-top: 10px;
 }
+
 li
 {
     list-style-type: none;       
@@ -141,11 +139,16 @@ a
     margin-right: 40px;  
     margin-top: 20px;  
 }
-#filtre h3
 
+#filtre h3
 {
     margin-right: 20px;
     
+}
+
+#filtre p
+{
+    font-weight: bold;
 }
 
 .filtreicon
@@ -165,11 +168,11 @@ a
     margin-right: -35px;
 }
 
-
-
-
-
-
+#filtre a
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* barre info*/
 
@@ -186,7 +189,6 @@ a
     border: 1px solid #F2F2F2;
     padding: 10px;
     margin-bottom: -45px;
-
 }
 
 .info
@@ -194,119 +196,122 @@ a
     width: 5px;
 }
 
-
-
-
 /* hebergement et populaire*/
 
-.heberg  
-{
-    
+.blochebergpop  
+{    
     display: flex;   
     width: 100%;
-    margin-left: -10px;
-
-}
-
-
-
-#hebergement
-{
-    
-    display: flex;
-    flex-wrap: wrap;      
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F2F2F2;
-    margin: 20px;
-    border-radius: 10px;
-    height: 500px;
-    flex: 2;
-    padding: 70px 20px 70px 20px;
-
-}
-
-#text_titre
-{
-    display: block;
-    position: absolute;
-    margin-left: 75px;
-    margin-top: 40px;
-}
-
-#text_plus 
-{   
-    display: block;
-    position: absolute;
-    margin-top: 680px;
-    margin-left: 55px;
-    padding: 20px;
-    
+    column-gap: 30px;
 }
 
 /* les vignettes d'hebergement*/
 
-.element
-{   
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: white;
-    padding: 5px;
-    border-radius: 10px;
-    height: 200px;
-    margin: 15px;
-    
+#blochebergement
+{
+    display: flex;
+    flex-direction: column;      
+    flex: 2;
+    background-color: #F2F2F2;
+    height: 600px;
+    border-radius: 20px;
 }
 
-.element:hover
+#blochebergement_text
+{
+    margin-left: 30px;
+}
+
+#group_heberg
+{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;   
+}
+
+.vignette_marseille
+{
+    background-color: white;   
+    width: 252px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    list-style: none;
+
+}
+
+.vignette_marseille:hover
 {
     transform: scale(1.1);
 }
 
-.element img
+
+.vignette_marseille_img
 {
-    width: 190px;
-    border-radius: 10px 10px 0px 0px;
+    width: 250px;
+    height: 100px;
+    background-size: 100% 100%;
+    
+}
+.vignette_marseille_img_import
+{
+    width: 100%;
+    height: 100px;
+    background-size: 100% 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+
+}
+.vignette_text
+{
+    margin: 5px;
+}
+.nom_hotel
+{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.prix_hotel
+{
+    font-size: 0.9em;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
-
-
-aside
-{
-    display: block;
-    position: relative;
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    margin: 20px;
-}
-
-aside h4
-{
-    font-size: 0.8em;
-}
-
-aside p
-{
-    font-size: 0.7em;
-}
-
-/* les vignettes de populaire*/
-
-#populaires
+.etoile
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around; 
-    background-color: #F2F2F2;
-    flex: 1;
-    height: 600px;    
-    border-radius: 10px;
+    flex-direction: row;    
+    height: 18px;
+    width: 16px;
+    
+    
 }
 
-#populaires h3
+.affich_plus
 {
     margin-left: 30px;
+}
+
+/* bloc populaire*/
+
+.blocpopulaire
+{
+       
+    background-color: #F2F2F2;    
+    border-radius: 10px;
+    height: 600px;
+    flex: 1;
+    
+}
+
+.blocpopulaire h3
+{
+    margin-left:50px;
 }
 
 
@@ -314,21 +319,37 @@ aside p
 {
     display: flex;
     justify-content: flex-end;
-    margin-right: 35px;
-    margin-top: -10px;
+    margin-right: 45px;
+    margin-top: -18.720px;
+}
+
+
+/* les vignettes de populaire*/
+
+#populaires
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #F2F2F2;      
+    border-radius: 20px;
 }
 
 .vignette_pop
 {   
     display: flex;
     height: 140px;
-    width: 340px;
-    justify-content: center;
+    width: 345px;
+    justify-content: flex-start;
     align-items: center;        
-    background-color: white;
-    padding: 2px 10px 2px 2px;
+    background-color: white;   
     border-radius: 10px;
-    margin: 10px 30px 10px 30px;
+    border: 5px solid transparent;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    margin: 10px;
+    
+    
 }
 
 .vignette_pop:hover
@@ -337,31 +358,73 @@ aside p
     transform: scale(1.1);
 }
 
-.vignette_pop img
+.vignette_pop_img
 {   
+    
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px 0px 0px 10px;
-    width: 130px;
-    height: 130px;
-    padding: 5px;
-    margin: 3px 3px 3px -50px;    
+    align-items: center;      
+    width: 136px;
+    height: 138px;    
+    background-size: cover;     
 }
 
-.vignette_text
+.vignette_pop_img_import
+{   
+    width: 100%;
+    height: 100%;    
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
+}   
+
+.vignette_pop_text
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-left: 10px;
-    padding-right: 20px;   
+    margin-right: 30px;
 }
+
+.vignette_pop_text h4
+{
+    margin-top: 5px;
+    margin-bottom: 1px
+}
+
+.vignette_pop_text p
+{
+    font-size: 0.9em;
+    margin-top: 2px;
+    
+}
+
+.etoile1
+{
+    display: flex;
+    flex-direction: row;    
+    height: 18px;
+    width: 16px;
+    margin-top: 20px;
+    
+    
+}
+
 
 /*activite*/
 
 .parentactivite
 {
-    display: flex;
+    display: flex;    
     flex-direction: column;
+    margin: 10px -20px 20px -20px;
+}
+
+.parentactivite h3
+{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: -40px;
+    
 }
 
 /* les vignettes d'activites*/
@@ -369,33 +432,68 @@ aside p
 #activite
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 500px;    
+    margin-bottom: 40px;
+    
 }
 
-.activite
+.vignette_activite
 {
-    width: 300px;
-    border: 2px solid #F2F2F2;
-    border-radius: 10px;
-    margin: 10px 20px 20px 0px;
+    
+    width: 300px;    
+    border-radius: 10px;    
+    box-shadow: 0px 0px 6px 2px #F2F2F2;    
 }
-.activite:hover
+.vignette_activite:hover
 {
     transform: scale(1.1);
 }
 
-.activite img
+.vignette_activite img
 {
+    height: 100%;
     width: 300px;
     border-radius: 10px 10px 0px 0px;
 }
 
-.activite h4
+.vignette_activite h4
 {
     margin-left: 10px;
 }
 
+.vignette_activite:nth-child(1)
+{
+    height: 390px;
+}
 
+.vignette_activite:nth-child(2)
+{
+    height: 180px;
+}
+
+.vignette_activite:nth-child(3)
+{
+    height: 110px;
+}
+
+.vignette_activite:nth-child(4)
+{
+    height: 390px;
+}
+
+.vignette_activite:nth-child(5)
+{
+    height: 140px;
+}
+
+.vignette_activite:nth-child(6)
+{
+    height: 155px;
+}
 /* le pied de page*/
 
 footer
