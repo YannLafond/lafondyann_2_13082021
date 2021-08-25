@@ -3,7 +3,8 @@ body
     font-family: 'Raleway', sans-serif;
     background-color: white;
     margin: auto;
-    width: 1440px;
+    width: auto;
+    
 }
 
 span
@@ -46,6 +47,14 @@ nav
 {
     margin: 20px;
 }    
+
+/* survol de navigation*/
+
+#menu :hover
+{
+   color: #0065FC
+}
+
 
 /* le conteneur de recherche et filtre */
 
@@ -97,12 +106,6 @@ input[type=submit]
     cursor: pointer;
 }
 
-input[type=submit]:hover
-{
-    background-color:#DEEBFF;    
-    color: #0065FC;
-}
-
 form img
 {
     height: 20px;
@@ -129,6 +132,16 @@ a
 {
     text-decoration: none;
 }
+
+/*effet de survol du bouton rechercher*/
+
+input[type=submit]:hover
+{
+    background-color:#DEEBFF;    
+    color: #0065FC;
+}
+
+
 
 /* les filtres */
 
@@ -165,7 +178,7 @@ a
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-bottom: -14px;
-    margin-right: -35px;
+    margin-right: -46px;
 }
 
 #filtre a
@@ -173,6 +186,22 @@ a
     margin-left: 10px;
     margin-right: 10px;
 }
+
+/*effet de survol des filtres*/
+
+#filtre a:hover 
+{
+    
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.filtreicon:hover
+{
+    background-color: #DEEBFF;    
+}
+
+
 
 /* barre info*/
 
@@ -201,6 +230,7 @@ a
 .blochebergpop  
 {    
     display: flex;   
+    
     width: 100%;
     column-gap: 30px;
 }
@@ -214,7 +244,7 @@ a
     flex: 2;
     background-color: #F2F2F2;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #blochebergement_text
@@ -525,4 +555,28 @@ footer
 #propos, #heberg, #assistance
 {
     margin-right: 300px;
+}
+
+/* responsive design*/
+
+@media all and (max-width: 1300px)
+{
+    filtreicon
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blochebergpop
+    {
+        flex-direction: column-reverse;
+    }
+
+    #blochebergement
+    {
+        
+    }
+
+
+
 }
