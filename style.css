@@ -475,9 +475,8 @@ input[type=submit]:hover
 {
     
     width: 300px;    
-    border-radius: 10px;
-    border:1px solid #F2F2F2;    
-    box-shadow: 1px 1px 6px 2px #0000002e;    
+    border-radius: 10px;    
+    box-shadow: 0px 0px 6px 2px #0000002e;    
 }
 .vignette_activite:hover
 {
@@ -573,7 +572,10 @@ footer
         flex-direction: column-reverse;
     }
 
-    
+    #blochebergement
+    {
+        
+    }
 
 
 
