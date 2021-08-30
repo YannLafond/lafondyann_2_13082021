@@ -469,13 +469,14 @@ input[type=submit]:hover {
     
 }
 
-.vignette_activite {
+
+
+.vignette_activite  {
 
     height: 100%;
-    width: 300px;
-    border: 1px 1px 0 1px solid #0a0000;    
+    width: 300px;       
     border-radius: 10px 10px 0 0;    
-    box-shadow: 0px 0px 6px 2px #F2F2F2;    
+      
 }
 
 .vignette_activite img {
@@ -483,6 +484,7 @@ input[type=submit]:hover {
     height: 100%;
     width: 300px;
     border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
 }
 
 .vignette_activite h4 {
@@ -554,7 +556,7 @@ footer {
 
 /* responsive design*/
 
-@media all and (max-width: 1300px)
+@media all and (max-width: 1280px)
 
 {
 
