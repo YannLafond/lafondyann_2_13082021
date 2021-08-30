@@ -233,13 +233,12 @@ input[type=submit]:hover {
     column-gap: 30px;
 }
 
-/* les vignettes d'hebergement*/
+
 
 #blochebergement {
 
     display: flex;
-    flex-direction: column;
-         
+    flex-direction: column;         
     flex: 2;
     background-color: #F2F2F2;
     height: 600px;
@@ -264,12 +263,12 @@ input[type=submit]:hover {
     
            
 }
+/* les vignettes d'hebergement*/
 
 .vignette_marseille {
 
     background-color: white;   
-    width: 244px;
-    
+    width: 244px;    
     margin: 15px 15px 15px 15px;
     border-radius: 10px;
     border: 5px solid transparent;
@@ -463,16 +462,12 @@ input[type=submit]:hover {
     align-content: space-between;
     flex-wrap: wrap;
     height: 450px;   
-    margin-top: 50px;
-   
-    
-    
+    margin-top: 50px;    
 }
 
 
 
 .vignette_activite  {
-
     
     height: 100%;
     width: 300px;       
@@ -566,22 +561,227 @@ footer {
 
 /* responsive design*/
 
-@media all and (max-width: 1280px)
+@media all and  (max-width: 600px)
 
 {
+    body {
 
-    filtreicon
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .blochebergpop
-    {
-        flex-direction: column-reverse;
+        width: auto;
+        margin: 0;
     }
 
     
+    
+
+    
+    
+
+
+    #logo {
+
+        display: inline-block;
+    }
+
+    nav {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #menu ul:nth-child(1) {
+
+        order: 3;
+        width: 50%;
+        
+
+    }
+
+    #menu ul:nth-child(2) {
+
+        order: 2;
+        width: 50%;
+        
+    }
+
+    #menu ul:nth-child(3) {
+
+        order: 1;
+        
+    }
+    
+    
+    /*le conteneur recherche et filtre*/
+    
+
+
+    .filter {
+
+        display: block;
+        margin: 20px;
+    }
+    
+    /*barre de recherche*/
+
+    /*input[type=submit] {
+
+        i
+    }*/
+
+    /*les filtres*/
+
+    #filtre {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }   
+
+    #filtre h3 {
+
+        width: 100%;
+        margin: 0 0 15px 0;
+    }
+
+    #money {
+
+        margin: 0px 10px 15px 0;
+    }
+
+    #heart {
+
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    #dog {
+
+        margin: 15px 0 0 0;
+    }
+
+    /* populaire et hebergement */
+
+    .blochebergpop
+    {
+        flex-direction: column-reverse;        
+        margin: 1px;
+        
+    }
+
+    /* bloc populaire */
+
+    .blocpopulaire {
+
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .blocpopulaire h3 {
+
+        margin-left: 55px;        
+    }
+
+    .icon_chart {
+
+        margin-right: 50px;
+    }
+
+    #populaires {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    /* bloc hebergement*/
+
+    #blochebergement {
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    #blochebergement_text {
+
+        margin: 0 0 0 55px;
+    }
+
+    /*vignette marseille*/
+    .vignette_marseille {
+
+        width: 345px;
+    }
+
+    .vignette_marseille_img {
+
+        width: 346px;        
+    }
+
+    .affich_plus {
+
+        margin: 10px 0 0 55px;
+    }
+
+    /*activite*/
+
+    .parentactivite {
+
+        width: 100%;
+    }
+
+    .parentactivite h3 {
+
+        margin: 30px 0 -40px 55px;
+    }
+
+    #activite {
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        height: auto;
+    }
+
+    .vignette_activite {
+
+        width: 345px;
+        height: 190px;
+    }
+
+    .vignette_activite img {
+
+        width: 345px;
+        height: 135px;
+        
+    }
+
+    .vignette_activite:nth-child(3) {
+
+        margin-top: auto;
+    }
+
+    .vignette_activite:nth-child(6) {
+
+        margin-top: auto;
+    }
+
+    footer {
+
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    #footer {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
 
