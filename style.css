@@ -567,47 +567,52 @@ footer {
     body {
 
         width: auto;
-        margin: 0;
+        
     }
 
-    
-    
+    #bloc {
 
-    
-    
+        margin: 0;
+    }   
 
+    #menu {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
     #logo {
 
-        display: inline-block;
+              
+        margin: 10px 0 10px 20px;
+        width: 70%;
     }
-
-    nav {
+     
+    #menu ul {
 
         display: flex;
-        flex-direction: row;
+        justify-content: flex-start;
         flex-wrap: wrap;
     }
-
-    #menu ul:nth-child(1) {
-
-        order: 3;
-        width: 50%;
+    #menu li {       
         
-
+        margin: 5px 20px 0 10px;
     }
 
-    #menu ul:nth-child(2) {
+    #menu li:nth-child(1) {
 
-        order: 2;
-        width: 50%;
-        
+        order: 3;      
     }
 
-    #menu ul:nth-child(3) {
+    #menu li:nth-child(2) {
 
-        order: 1;
-        
+        order: 2;        
+    }
+
+    #menu li:nth-child(3) {
+
+        order: 1;        
     }
     
     
@@ -623,10 +628,10 @@ footer {
     
     /*barre de recherche*/
 
-    /*input[type=submit] {
+    
 
-        i
-    }*/
+        
+    }
 
     /*les filtres*/
 
@@ -641,23 +646,28 @@ footer {
     #filtre h3 {
 
         width: 100%;
-        margin: 0 0 15px 0;
+        margin: 0 0 0 0;
     }
 
     #money {
 
-        margin: 0px 10px 15px 0;
+        margin: 15px 15px 15px 0;
+    }
+
+    #child {
+
+        margin: 15px 15px 15px 0;
     }
 
     #heart {
 
         width: 100%;
-        margin: 15px 0 15px 0;
+        margin: 15px 15px 15px 0;
     }
 
     #dog {
 
-        margin: 15px 0 0 0;
+        margin: 15px 15px 15px 0;
     }
 
     /* populaire et hebergement */
@@ -711,6 +721,7 @@ footer {
     }
 
     /*vignette marseille*/
+
     .vignette_marseille {
 
         width: 345px;
@@ -769,12 +780,7 @@ footer {
         margin-top: auto;
     }
 
-    footer {
-
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-    }
+    
 
     #footer {
 
@@ -783,6 +789,10 @@ footer {
         justify-content: center;
     }
 
+    #propos, #heberg, #assistance {
+
+        margin-right: 0px;
+    }
 
 
 }
