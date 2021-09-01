@@ -3,7 +3,7 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
     margin: auto;
-    width: 1440px;    
+    width: auto;    
 }
 
 span {
@@ -706,7 +706,7 @@ footer {
         margin: 15px 15px 15px 0;
     }
 
-    /* populaire et hebergement */
+    /*responsive mobile populaire et hebergement */
 
     .blochebergpop
     {
@@ -830,13 +830,171 @@ footer {
 }
 
 /*responsive tablette*/
-@media all and (min-width:601px) and (max-width: 862px)
+
+@media all and (min-width:601px) and (max-width: 1024px)
 
 {
     body {
 
-        width: auto;        
+        width: auto;
+        height: auto;             
     }
+
+    #bloc {
+
+        margin: 10px;        
+    }
+
+    #filtre {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;    
+        align-items: baseline;    
+    }    
+
+    
+
+    #money {
+
+        width: 40%;
+        margin: 15px 15px 15px 0;
+    }
+
+    #child {
+
+        width: 40%;
+        margin: 15px 15px 15px 0;
+    }
+
+    #heart {
+
+        
+        width: 40%;
+        margin: 15px 15px 15px 0;
+    }
+
+    #dog {
+
+        width: 40%;
+        margin: 15px 15px 15px 0;
+    }
+
+/*responsive tablette - filtres*/
+    
+
+    .blochebergpop
+    {
+        flex-direction: column-reverse;        
+        margin: 1px;        
+    }
+
+/*responsive tablette - populaire et hebergement*/
+
+    #blochebergement {
+
+        margin: 10px 0 10px 0;
+    }
+
+/*responsive tablette - populaire*/
+
+    .blocpopulaire {
+
+        margin: 10px 0 10px 0; 
+    }
+
+    .vignette_pop {
+
+        width: 500px;
+    }
+/*responsive tablette - activite*/
+
+    .parentactivite  {
+
+        display: flex;
+        width: auto;
+    }
+
+    .parentactivite h3 {       
+        
+        padding:0 0 20px 35px ;
+    }
+
+    #activite {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;                
+    }
+
+    .vignette_activite {
+
+        width: auto;
+        height: 100%;
+    }
+    .vignette_activite img {
+
+        width: 300px;
+        height: 200px;
+    }    
+    
+    .vignette_activite:nth-child(1) {
+
+        height: 35%;
+        margin: 10px;
+    }
+    
+    .vignette_activite:nth-child(2) {
+    
+        height: 35%;
+        margin: 10px;
+    }
+    
+    .vignette_activite:nth-child(3) {
+    
+        height: 35%;
+        margin: 10px;
+    }
+    
+    .vignette_activite:nth-child(4) {
+    
+        height: 35%;
+        margin: 10px;
+    }
+    
+    .vignette_activite:nth-child(5) {
+    
+        height: 35%;
+        margin: 10px ;
+    }
+    
+    .vignette_activite:nth-child(6) {
+    
+        height: 35%;
+        margin: 10px ;
+    }
+/*responsive tablette - footer*/
+
+    #footer {
+
+        width: 100%;
+        
+    }
+
+    #propos, #heberg, #assistance  {
+        
+
+        width: 30%;
+        margin:0 15px 0 15px;
+               
+    }
+
 
 }    
 
