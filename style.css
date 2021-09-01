@@ -45,6 +45,12 @@ nav {
 
 /*menu de navigation*/
 
+#menu {
+
+    display: flex;   
+    align-items: center;
+}
+
 #menu ul {
 
     display: flex;
@@ -62,6 +68,9 @@ nav {
 
 .menu3 {
     color: #0065FC;
+    margin-left: 10px;
+   
+        
 }
 
 
@@ -577,8 +586,7 @@ footer {
 {
     body {
 
-        width: auto;
-        
+        width: auto;        
     }
 
     #bloc {
@@ -591,53 +599,48 @@ footer {
     header {
 
         display: flex;
-        align-items: center;        
+        flex-wrap: wrap;        
     }    
 
     #logo {
 
-        
         margin: 10px 30px 0 20px;               
-    }       
+    }      
     
-    /*nav {
-        
-        
-        display: flex;
-        flex-wrap: wrap;      
-        
-    }*/
+    nav {
+
+        width: 100%;        
+    }
 
     #menu {
 
         display: flex;
-        flex-wrap: wrap;
-        width: 60%;
+        width: 100%;
+        justify-content: space-around;       
     }
 
-    #menu li:nth-child(1) {
-
-        order: 3;
-              
+    #menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;        
+        padding: 0;
+        margin: 0;
     }
 
-    #menu li:nth-child(2) {
+    #menu li {
 
-        order: 2;  
-              
-    }
+        margin: 10px 0 10px 0;
+    }  
+   
+    .menu3 {
 
-    #menu li:nth-child(3) {
-
-        
-        order: 1; 
-             
-    }
-    
+        position: absolute;
+        top: 5px;
+        right: 2px;
+        margin: 20px;        
+    }   
     
     /* responsive mobile - le conteneur recherche et filtre*/
-    
-
 
     .filter {
 
@@ -660,8 +663,7 @@ footer {
         background-position: 50% 50%;
         background-size: 20px;
         padding-top: 11px;
-        margin-left: -5px;
-        
+        margin-left: -5px;        
     }
 
         
@@ -709,8 +711,7 @@ footer {
     .blochebergpop
     {
         flex-direction: column-reverse;        
-        margin: 1px;
-        
+        margin: 1px;        
     }
 
     /*responsive mobile - bloc populaire */
@@ -724,12 +725,12 @@ footer {
 
     .blocpopulaire h3 {
 
-        margin-left: 55px;        
+        margin-left: 40px;        
     }
 
     .icon_chart {
 
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     #populaires {
@@ -780,7 +781,7 @@ footer {
 
     .parentactivite h3 {
 
-        margin: 30px 0 -40px 55px;
+        margin: 30px 0 -30px 40px;
     }
 
     #activite {
@@ -800,8 +801,7 @@ footer {
     .vignette_activite img {
 
         width: 345px;
-        height: 135px;
-        
+        height: 135px;        
     }
 
     .vignette_activite:nth-child(3) {
@@ -812,9 +812,7 @@ footer {
     .vignette_activite:nth-child(6) {
 
         margin-top: auto;
-    }
-
-    
+    }    
 
     #footer {
 
