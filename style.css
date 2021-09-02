@@ -365,7 +365,7 @@ input[type=submit]:hover {
 
     margin-left:50px;
     margin-top: 30px;
-    
+    margin-bottom: 10px;
     
 }
 
@@ -629,9 +629,32 @@ footer {
 
     #menu li {
 
+        width: 50%;
         margin: 10px 0 10px 0;
     }  
-   
+    
+    .menu1 {
+
+        margin-bottom: 10px;
+    }
+
+    li:nth-child(1) {
+
+        text-align: center;        
+        border-bottom-width: 50%;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 10px;
+        
+    }
+
+    li:nth-child(2) {
+
+        text-align: center;
+        border-bottom-width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 10px;
+    }   
+    
     .menu3 {
 
         position: absolute;
@@ -849,11 +872,8 @@ footer {
 
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-end;    
-        align-items: baseline;    
-    }    
-
-    
+        justify-content: flex-end;        
+    }
 
     #money {
 
@@ -996,19 +1016,5 @@ footer {
     }
 
 
-}    
 
-/*responsive 4K*/
-@media (min-width: 1920px)
-{
-	body {
-
-    width: 1400px;
-	font-size:1.4em;	
-	padding-right: 2px;
-	padding-left: 2px;    
-	margin-right: auto;
-	margin-left: auto;
-
-    }
 }    
