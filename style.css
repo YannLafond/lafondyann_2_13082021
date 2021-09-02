@@ -256,8 +256,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;         
     flex: 2;
-    background-color: #F2F2F2;
-    height: 600px;
+    background-color: #F2F2F2;    
     border-radius: 10px;
     width: auto;    
     
@@ -266,13 +265,15 @@ input[type=submit]:hover {
 #blochebergement_text {
 
     margin-left: 30px;    
-    margin-top: 30px;
+    
    
 }
 
 
 #group_heberg {
 
+    width: auto;
+   
     display: flex;    
     flex-wrap: wrap;
     justify-content: space-around;
@@ -284,7 +285,7 @@ input[type=submit]:hover {
 .vignette_marseille {
 
     background-color: white;   
-    width: 244px;    
+    width: auto;    
     margin: 15px 15px 15px 15px;
     border-radius: 10px;
     border: 5px solid transparent;
@@ -355,7 +356,7 @@ input[type=submit]:hover {
        
     background-color: #F2F2F2;    
     border-radius: 10px;
-    height: 600px;
+    
     flex: 1;    
 }
 
@@ -388,8 +389,13 @@ input[type=submit]:hover {
     align-items: center; 
     background-color: #F2F2F2;      
     border-radius: 10px;
-    margin-top: 40px;
     
+    
+}
+
+#populaires a {
+
+    display: flex;
 }
 
 .vignette_pop {   
@@ -851,7 +857,7 @@ footer {
 
 /*responsive tablette*/
 
-@media all and (min-width:601px) and (max-width: 1024px)
+@media all and (min-width:601px) and (max-width: 1080px)
 
 {
     body {
@@ -918,6 +924,11 @@ footer {
     .blocpopulaire {
 
         margin: 10px 0 10px 0; 
+    }
+
+    #populaires {
+
+        margin: 0 0 20px 0;
     }
 
     .vignette_pop {
