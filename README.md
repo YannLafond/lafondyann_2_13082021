@@ -1,6 +1,6 @@
 # lafondyann_2_13082021
 
-                            Projet 2 de la formation web devellopeur d'Open Classrooms
+                            Projet 2 de la formation web dévelopeur d'OpenClassrooms
 
             Réservia
 
