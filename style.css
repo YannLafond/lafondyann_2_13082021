@@ -28,14 +28,13 @@ header {
     display: flex;
     width: 100%;
 }
+
 nav {
 
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }    
-
-    
 
 #logo {
 
@@ -68,11 +67,8 @@ nav {
 
 .menu3 {
     color: #0065FC;
-    margin-left: 10px;
-   
-        
+    margin-left: 10px;        
 }
-
 
 /* le conteneur de recherche et filtre */
 
@@ -98,7 +94,6 @@ nav {
 
     font-size: 15px;
 }
-
 
 /* la barre de recherche*/ 
 
@@ -159,8 +154,6 @@ input[type=submit]:hover {
     color: #0065FC;
 }
 
-
-
 /* les filtres */
 
 #filtre {
@@ -176,8 +169,6 @@ input[type=submit]:hover {
     margin-right: 20px;
     
 }
-
-
 
 .filtreicon {
 
@@ -215,8 +206,6 @@ input[type=submit]:hover {
 
     background-color: #DEEBFF;    
 }
-
-
 
 /* barre info*/
 
@@ -269,7 +258,6 @@ input[type=submit]:hover {
    
 }
 
-
 #group_heberg {
 
     width: auto;   
@@ -279,6 +267,7 @@ input[type=submit]:hover {
     
            
 }
+
 /* les vignettes d'hebergement*/
 
 .vignette_marseille {
@@ -297,9 +286,7 @@ input[type=submit]:hover {
 
     width: 245px;
     height: 100px;
-    background-size: 100% 100%;
-    
-    
+    background-size: 100% 100%;    
 }
 
 .vignette_marseille_img_import {
@@ -307,10 +294,8 @@ input[type=submit]:hover {
     width: 100%;
     height: 100px;
     background-size: 100% 100%;
-    border-radius: 10px 10px 0 0;
-    
+    border-radius: 10px 10px 0 0;    
     object-fit: cover;
-
 }
 
 .vignette_text {
@@ -338,9 +323,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: row;    
     height: 18px;
-    width: 16px;
-    
-    
+    width: 16px;    
 }
 
 .affich_plus {
@@ -360,8 +343,7 @@ aside {
 
 .blocpopulaire {
 
-    display: flex; 
-    
+    display: flex;    
     justify-content: space-around;
     align-items: baseline;     
 }
@@ -376,9 +358,6 @@ aside {
     margin-right: -20px;
 }
 
-
-
-
 /* les vignettes de populaire*/
 
 #populaires {
@@ -388,9 +367,7 @@ aside {
     flex-direction: column;
     align-items: center; 
     background-color: #F2F2F2;      
-    border-radius: 10px;
-    
-    
+    border-radius: 10px;    
 }
 
 #populaires a {
@@ -459,21 +436,18 @@ aside {
     margin-top: 20px;    
 }
 
-
 /*activite*/
 
 #parentactivite {
 
     display: flex;    
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
 #parentactivite h3 {
 
     margin-top: 40px;    
-    margin-bottom: -40px;
-    
+    margin-bottom: -40px;    
 }
 
 /* les vignettes d'activites*/
@@ -487,8 +461,6 @@ aside {
     height: 450px;   
     margin-top: 50px;    
 }
-
-
 
 .vignette_activite  {
     
@@ -582,7 +554,7 @@ footer {
     margin-right: 300px;
 }
 
-/* responsive design*/
+/*responsive design*/
 
 /*responsive mobile*/
 
@@ -593,10 +565,8 @@ footer {
 
         width: 100%;    
         margin: 0;   
-        padding: 0; 
-        
-    }
-   
+        padding: 0;        
+    }   
 
     /*responsive mobile - header*/
 
@@ -641,8 +611,7 @@ footer {
 
         text-align: center;        
         border-bottom: 3px solid #0065FC;
-        padding-bottom: 10px;
-        
+        padding-bottom: 10px;        
     }
 
     #menu li:nth-child(2) {
@@ -685,10 +654,7 @@ footer {
         padding-top: 11px;
         margin-left: -5px;   
         margin-right: 0;     
-    }
-
-        
-    
+    }    
 
     /*responsive mobile - les filtres*/
 
@@ -728,17 +694,18 @@ footer {
     }
 
     /*responsive mobile populaire et hebergement */
+
     .blochebergpop
     {
         width: 100%;
         flex-direction: column-reverse; 
-        column-gap: 0;               
-               
+        column-gap: 0;           
     }
 
     /*responsive mobile - bloc populaire */
 
     aside {
+
         display: flex;
         flex-direction: column;        
         width: 100%;        
@@ -748,9 +715,8 @@ footer {
     .blocpopulaire {
 
         width: 100%;
-
     }
-    
+
     #populaires a {
 
         width: 100%;
@@ -761,8 +727,6 @@ footer {
 
         margin: 10px;
     }
-
-
 
     /*responsive mobile - bloc hebergement*/
 
@@ -777,6 +741,18 @@ footer {
 
         margin-left: -35px;
     }
+
+    #group_heberg, a {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .vignette_marseille_img {
+
+        width: 100%;
+    }    
+
     .affich_plus {
 
 
@@ -784,6 +760,7 @@ footer {
     }
 
 /*responsive mobile - activite*/
+
     #parentactivite {
 
         width: 100%;
@@ -825,21 +802,21 @@ footer {
     #propos, #heberg, #assistance {
 
         margin-right: 0px;
-
-/*responsive tablette*/
-
-@media all and (min-width:601px) and (max-width: 1080px)
-
-{
-    body {
-
-        width: auto;
-        height: auto;             
     }
+} 
+
+ /*responsive tablette*/
+
+ @media all and (min-width:601px) and (max-width: 1080px) {
+
+    body {
+        
+        width: 100%;        
+    } 
 
     #bloc {
-
-        margin: 10px;        
+        
+        margin: 0 10px 0 10px;                
     }
 
     #filtre {
@@ -862,7 +839,6 @@ footer {
     }
 
     #heart {
-
         
         width: 40%;
         margin: 15px 15px 15px 0;
@@ -874,23 +850,22 @@ footer {
         margin: 15px 15px 15px 0;
     }
 
-/*responsive tablette - filtres*/
-    
+ /*responsive tablette - filtres*/    
 
-    .blochebergpop
-    {
+    .blochebergpop {
+    
         flex-direction: column-reverse;        
         margin: 1px;        
     }
 
-/*responsive tablette - populaire et hebergement*/
+ /*responsive tablette - populaire et hebergement*/
 
     #blochebergement {
 
         margin: 10px 0 10px 0;
     }
 
-/*responsive tablette - populaire*/
+ /*responsive tablette - populaire*/
 
     aside {
 
@@ -906,7 +881,8 @@ footer {
 
         width: 500px;
     }
-/*responsive tablette - activite*/
+
+ /*responsive tablette - activite*/
 
     #parentactivite  {
 
@@ -937,53 +913,24 @@ footer {
         width: auto;
         height: 100%;
     }
+
     .vignette_activite img {
 
         width: 300px;
         height: 200px;
     }    
     
-    .vignette_activite:nth-child(1) {
+    .vignette_activite:nth-child(n) {
 
         height: 35%;
         margin: 10px;
-    }
+    }    
     
-    .vignette_activite:nth-child(2) {
-    
-        height: 35%;
-        margin: 10px;
-    }
-    
-    .vignette_activite:nth-child(3) {
-    
-        height: 35%;
-        margin: 10px;
-    }
-    
-    .vignette_activite:nth-child(4) {
-    
-        height: 35%;
-        margin: 10px;
-    }
-    
-    .vignette_activite:nth-child(5) {
-    
-        height: 35%;
-        margin: 10px ;
-    }
-    
-    .vignette_activite:nth-child(6) {
-    
-        height: 35%;
-        margin: 10px ;
-    }
-/*responsive tablette - footer*/
+ /*responsive tablette - footer*/
 
     #footer {
 
-        width: 100%;
-        
+        width: 100%;        
     }
 
     #propos, #heberg, #assistance  {
@@ -993,7 +940,4 @@ footer {
         margin:0 15px 0 15px;
                
     }
-
-
-
 }
