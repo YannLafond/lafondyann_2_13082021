@@ -565,14 +565,14 @@ footer {
 
         width: 100%;    
         margin: 0;   
-        padding: 0;        
+        padding: 0;
+        background-color: aqua;     
     }   
 
     /*responsive mobile - header*/
 
     header {
-
-        display: flex;
+        
         flex-wrap: wrap;        
     }    
 
@@ -623,10 +623,10 @@ footer {
     
     .menu3 {
 
-        position: absolute;
+        position: absolute;          
         top: 5px;
-        right: 2px;
-        margin: 20px;        
+        right: 5px;
+        margin-top: 20px;        
     }   
     
     /* responsive mobile - le conteneur recherche et filtre*/
@@ -742,7 +742,7 @@ footer {
         margin-left: -35px;
     }
 
-    #group_heberg, a {
+    #group_heberg a {
 
         width: 100%;
         justify-content: center;
